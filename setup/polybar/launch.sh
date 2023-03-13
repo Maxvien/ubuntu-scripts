@@ -8,6 +8,6 @@ polybar-msg cmd quit
 
 # Launch main
 echo "---" | tee -a /tmp/polybar-main.log.log
-polybar -c config.ini main 2>&1 | tee -a /tmp/polybar-main.log & disown
+polybar -c $HOME/.config/polybar/config.ini main 2>&1 | tee -a /tmp/polybar-main.log & disown
 
 echo "Bars launched..."
