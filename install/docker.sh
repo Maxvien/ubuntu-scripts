@@ -10,7 +10,7 @@ setup() {
 
 install() {
   sh -c "$(wget https://get.docker.com -O -)"
-  apt-get install -y uidmap
+  sudo apt-get install -y uidmap
   dockerd-rootless-setuptool.sh install
 
   echo "INSTALL: Done"
